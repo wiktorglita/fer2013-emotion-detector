@@ -16,7 +16,7 @@ A professional Deep Learning project using a custom **CNN** built with **PyTorch
 
 ## 📊 Results
 ![Confusion Matrix](results/confusion_matrix.png)
-![Predictions](results/predictiopns.png)
+![Predictions](results/predictions.png)
 
 ## ⚙️ Quick Start
 1. Install: `pip install torch torchvision opencv-python matplotlib seaborn scikit-learn`
