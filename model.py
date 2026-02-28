@@ -13,7 +13,7 @@ class EmotionCNN(nn.Module):
         self.pool = nn.MaxPool2d(2, 2)
         self.drop = nn.Dropout(0.25)
 
-        # 48 -> 24 -> 12 -> 6 (po 3 poolingach)
+       
         self.fc1 = nn.Linear(128 * 6 * 6, 128)
         self.out = nn.Linear(128, num_classes)
 
@@ -36,4 +36,5 @@ class EmotionCNN(nn.Module):
         
         x = torch.relu(self.fc1(x))
         x = self.out(x)
+
         return x
